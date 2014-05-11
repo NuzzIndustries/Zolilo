@@ -1,0 +1,27 @@
+﻿Finish map.txt
+
+
+Modify goal browsing to search by tag, orphaned goals (2 days)
+
+3 weeks
+
+Add user history audit (1 week)
+Add role-based security
+
+
+Nice to have:
+Custom progress meter when initializing
+Ajax load replies/parent dynamically on click (5 days)
+Fix refresh page on 404 error. Fix URLs as WebDirector doesn't work via 404 - This can be done by overriding the pushstate behavior on 404.aspx
+
+
+View graph data in graphical format
+Add development multiple accounts support (1 day)
+
+Long term
+Web document node
+Change List<DR_GraphEdges> in GetParent/GetChildEdges to be read only
+Allow editing of goals (1 day)
+Add raw view of in-memory DB via admin (5 days)
+Multithreaded parallel system initialization.
+Add very detailed log, use logger library

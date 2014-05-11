@@ -1,0 +1,1 @@
+<add name="PostgresConnection" connectionString="Server=127.0.0.1; Port=5432;Database=zolilo; User Id=postgres; Password=nanomage604c; Preload Reader = true"/>

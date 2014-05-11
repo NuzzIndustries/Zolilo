@@ -1,0 +1,45 @@
+﻿
+
+###################
+Sample Problems
+
+Score a person based on their tag efficacy
+
+###################
+Test algorithm
+
+Select into Set A
+from fragments
+where 
+and 
+
+foreach(fragment in A)
+{
+
+}
+count +0.25 for positive
+count -1 for negative (with explanation)
+
+
+####################
+Types
+
+agent
+long
+node
+object
+
+
+node
+Inherits: object
+Properties:
+ID : long
+Agent : agent
+
+
+fragment
+Inherits : node
+
+object
+Properties:
+type : type

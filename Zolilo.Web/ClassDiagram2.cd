@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="Zolilo.Web.TheBrain" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAhAAAAAAAAAABAAAQwQAAEEAAA=</HashCode>
+      <FileName>Classes\TheBrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Web.FragmentView" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgIAAgA=</HashCode>
+      <FileName>Classes\Web\WebControls\FragmentView.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Web.ZoliloButton" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAAAAAAAAAAAAAAMAAAAAAAAAAQIABAACAAAAgA=</HashCode>
+      <FileName>Classes\Web\WebControls\ZoliloBasicControls\ZoliloButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Web.FragmentEditor" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAQAAABAAQBAAAAAIAAAA=</HashCode>
+      <FileName>Classes\Web\WebControls\ZoliloWidgetControls\FragmentEditor.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Web.GoalConnectionsControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAICEgAAAEAAAAAAAAAAACAAAQAAAAIAAAw=</HashCode>
+      <FileName>Classes\Web\WebControls\ZoliloWidgetControls\GoalConnectionsControl.ascx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Zolilo.Web.GoalDefinitionControl" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Classes\Web\WebControls\ZoliloWidgetControls\GoalDefinitionControl.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Web.GoalSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQIEIAEBAAAAIBQAAAAAgAAAAACRAAAAAAAJAACQ=</HashCode>
+      <FileName>Classes\Web\WebControls\ZoliloWidgetControls\GoalSelector.ascx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Zolilo.Web.GoalView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAABAAZAAAAAgAEQAEACAQEAAIAAAiRAAAAEAAAEAAQ=</HashCode>
+      <FileName>Classes\Web\WebControls\ZoliloWidgetControls\GoalView.ascx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Zolilo.Global" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAEAAAAAAAAAAECIBQAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo._Default" Collapsed="true">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAAACAAAAAAADBAQAAAAAQAQAAAAgAIoAAAA=</HashCode>
+      <FileName>Pages\Home.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.ZoliloHttpHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ZoliloHttpHandler.ashx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Zolilo.Pages.Login" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAQAAECAAAAAAAAAAAAgARAAAAAAAAAAIABAA=</HashCode>
+      <FileName>Pages\Account\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.Page_Register" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAAAAAAgIEAAUAABggAAQAAFAAQAAAAAAEMgAgE=</HashCode>
+      <FileName>Pages\Account\Register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.NewAgent" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAEAAAAAAAEAACAAAQQQAAAAAAAAAAAAIgAgA=</HashCode>
+      <FileName>Pages\Agent\NewAgent.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.Browse" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Pages\Browse\Browse.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.Goals" Collapsed="true">
+    <Position X="2" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIAAAA=</HashCode>
+      <FileName>Pages\Browse\Goals\Goals.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.NewGoal" Collapsed="true">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgACAQEAAEAAAAAAAAAghAQAAAAAAgIAAAg=</HashCode>
+      <FileName>Pages\Browse\Goals\NewGoal.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.ViewGoal" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQIAAAQ=</HashCode>
+      <FileName>Pages\Browse\Goals\ViewGoal.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.GlobalError" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAgIAAgA=</HashCode>
+      <FileName>Pages\Errors\GlobalError.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.Search" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAA=</HashCode>
+      <FileName>Pages\Search.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.SiteMaster" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAgAASAAAAAACAAAAAAAAAAAABAAAEAAIAAAA=</HashCode>
+      <FileName>Pages\Site.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.SiteInfo" Collapsed="true">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEACAAAgAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Pages\SiteInfo.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.AccountSettings" Collapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Pages\Account\AccountSettings.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.IDLink" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAIEAAEAABAAAAQAAEAAAAAAAAAAMgAgA=</HashCode>
+      <FileName>Pages\Account\IDLink.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.Logout" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Pages\Account\Logout.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zolilo.Pages.UnhandledError" Collapsed="true">
+    <Position X="2" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Pages\Errors\UnhandledError.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

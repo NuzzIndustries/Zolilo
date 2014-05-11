@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{161C6BC9-FB1A-4069-9813-253F23F3B241}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zolilo.Data</RootNamespace>
+    <AssemblyName>Zolilo.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net">
+      <HintPath>..\Zolilo.Web\Includes\BCrypt\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\Zolilo.Web\Includes\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\Program Files\PostgreSQL\Npgsql\ms.net4.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Communications\Data\DatabaseDefinitionManager.cs" />
+    <Compile Include="Communications\Data\Cache\ZoliloEdgeCache.cs" />
+    <Compile Include="Communications\Data\Cache\IZoliloDataIndex.cs" />
+    <Compile Include="Communications\Data\Cache\IZoliloTableCache.cs" />
+    <Compile Include="Communications\Data\Cache\ZoliloCache.cs" />
+    <Compile Include="Communications\Data\Cache\ZoliloDataIndex.cs" />
+    <Compile Include="Communications\Data\Cache\ZoliloTableCache.cs" />
+    <Compile Include="Communications\Data\DataConnection.cs" />
+    <Compile Include="Communications\Data\DataManager.cs" />
+    <Compile Include="Communications\Data\DDOQuery.cs" />
+    <Compile Include="Communications\Data\FormParameters.cs" />
+    <Compile Include="Communications\Data\Nodes\Edges\EdgeCollection.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Edge2FragmentEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Edge2Fragment_Definition.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Fragment2FragmentEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Fragment2Fragment_Reply.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\FragmentEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Goal2FragmentEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Goal2Fragment_GoalDefinition.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Metric2FragmentEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Metric2Fragment_Definition.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Tag2FragmentEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Fragment\Tag2Fragment_Definition.cs" />
+    <Compile Include="Communications\Data\Nodes\Goal\Goal2GoalEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Goal\Goal2Goal_Achieve.cs" />
+    <Compile Include="Communications\Data\Nodes\Goal\Goal2Goal_Inhibit.cs" />
+    <Compile Include="Communications\Data\Nodes\Goal\GoalEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\CreditPool.cs" />
+    <Compile Include="Communications\Data\Nodes\Goal\Tag2GoalEdge.cs" />
+    <Compile Include="Communications\Data\Nodes\Goal\Tag2Goal_GoalTag.cs" />
+    <Compile Include="Communications\Data\Nodes\Metric\Metric.cs" />
+    <Compile Include="Communications\Data\Nodes\NodeDict.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DataRecord.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_Accounts.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_Agents.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_FragmentLRA.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_Fragments.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_Goals.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_GraphEdges.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_OpenIDMap.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_Metrics.cs" />
+    <Compile Include="Communications\Data\RecordTypes\DR_Tags.cs" />
+    <Compile Include="Communications\Data\RecordTypes\GraphNode.cs" />
+    <Compile Include="Communications\Data\RecordTypes\TimestampRecord.cs" />
+    <Compile Include="Communications\Data\ZoliloDataOperation.cs" />
+    <Compile Include="Communications\Data\ZoliloQuery.cs" />
+    <Content Include="Communications\Web\HelloWorldHandler.cs" />
+    <Compile Include="Communications\Data\ZoliloTransaction.cs" />
+    <Compile Include="Communications\Web\RestrictedPage.cs" />
+    <Compile Include="Communications\Web\RouteManager.cs" />
+    <Compile Include="Communications\Web\Contexts\RequestContextTable.cs" />
+    <Compile Include="Communications\Web\Session\SessionStateFlags.cs" />
+    <Compile Include="Communications\Web\Contexts\ZoliloSession.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloAjaxControls\ZoliloFrameClient.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloAjaxControls\ZoliloMasterControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloAjaxControls\ZoliloSupervisorControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloAjaxControls\ZoliloViewStateControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloJavaScript\ZoliloJavascriptCallbackControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloJavaScript\ZoliloJavaScriptContainerControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloJavaScript\ZoliloJavaScriptControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloJavaScript\ZoliloJavaScriptFunctionControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloJavaScript\ZoliloJavaScriptImportControl.cs" />
+    <Compile Include="Communications\Web\WebControls\ZoliloWebControl.cs" />
+    <Compile Include="Communications\Web\Contexts\zContext.cs" />
+    <Compile Include="Communications\Web\ZoliloHttpModule.cs" />
+    <Compile Include="Communications\Web\ZoliloPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Communications\Web\Contexts\ZoliloPageFrameContext.cs" />
+    <Compile Include="Communications\Web\Contexts\ZoliloInstanceContext.cs" />
+    <Compile Include="Communications\Web\Contexts\ZoliloPageSupervisorContext.cs" />
+    <Compile Include="Communications\Web\ZoliloPageInterfaceTags.cs" />
+    <Compile Include="Communications\Web\ZoliloStateTable.cs" />
+    <Compile Include="Core\Communications\CommunicationsDirector.cs" />
+    <Compile Include="Core\GoalManager.cs" />
+    <Compile Include="Core\Security\FormValidation.cs" />
+    <Compile Include="Core\Security\SecurityEncryption.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZoliloSystem.cs" />
+    <Compile Include="Communications\WebDirector.cs" />
+    <Content Include="Communications\Web\Styles\Site.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zolilo.Core\Zolilo.Core.csproj">
+      <Project>{3C1C7F7D-FA93-4D42-9D71-01D8EE511C55}</Project>
+      <Name>Zolilo.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Communications\Data\Nodes\Account\" />
+    <Folder Include="Communications\Data\Nodes\Agent\" />
+    <Folder Include="Communications\Data\Nodes\Tag\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

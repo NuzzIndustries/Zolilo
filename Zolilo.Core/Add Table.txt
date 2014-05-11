@@ -1,0 +1,20 @@
+﻿To add a table:
+
+1) Ensure that DB table has "ID" column with type "bigint"
+2) Create a class with DR_<TABLENAME> as name, replace <TABLENAME> with the name of th table
+3) Inherit DR_<TABLENAME> from DataRecord
+4) If you want TimeCreated and TimeModified, add those columns to the table with TIMECREATED,TIMEMODIFIED as names, timestamp without time zone as data type
+5) Add ZoliloTableCache<DR_<TABLENAME>> to ZoliloCache.cs
+6) Construct the cache object, add it to cacheDict, and add a strongly typed property, to make it look like the others
+7) in DatabaseDefinitionManager.cs, in SetDatabaseSchemaObjects, add an entry for that table
+
+There may be other caveats as well.  Check the examples in the other table classes for more information
+
+If the Table will also be a node:
+
+8) Add a GraphNode inherited class
+9) Add the node type to the NodeType enum in GraphEdge.cs
+10) Add a folder for the Node under the Data\Nodes folder
+11) In that folder, Add a NodeEdge code file, using other similar files as a template
+12) Inherit the DR_<TABLENAME> from NodeRecord
+13) Add ResolveFromDatabase Method to GraphNode file

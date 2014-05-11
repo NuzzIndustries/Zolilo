@@ -1,0 +1,62 @@
+﻿
+    <!--
+    <ajax:tabcontainer runat="server">
+    
+    <ajax:TabPanel ID="a1" runat="server">
+    <ContentTemplate>Test1</ContentTemplate>
+    </ajax:TabPanel>
+    </ajax:tabcontainer>
+    <ajax:tabcontainer ID="TabContainer1" runat="server" ActiveTabIndex="0" 
+        Width="100%" EnableViewState="False" >
+    <ajax:TabPanel runat="server" HeaderText="Create Goal" ID="TabCreateGoal">
+        <ContentTemplate>
+        <p>
+            Create Goal
+        </p>
+        <p>
+            <asp:Label ID="LabelGoalName" runat="server" Text="Goal Name:"></asp:Label>
+            <asp:TextBox ID="TextBoxGoalName" runat="server" Height="22px" Width="300px" 
+                MaxLength="50"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorGoalName" runat="server" 
+                ControlToValidate="TextBoxGoalName" Display="Dynamic" 
+                ErrorMessage="Field is required." Height="20px" 
+                ondatabinding="ButtonSave_Click"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidatorGoalName" runat="server" 
+                ControlToValidate="TextBoxGoalName" Display="Dynamic" 
+                ErrorMessage="Name must contain only alphanumeric characters" 
+                Height="20px" ValidationExpression="^[0-9a-zA-Z]{1,50}$" 
+                ondatabinding="ButtonSave_Click"></asp:RegularExpressionValidator>
+        </p>
+        <p>
+            Parent Goal: 
+            <asp:Label ID="LabelParentGoal" runat="server" Text="[None Selected]"></asp:Label>
+
+            <br /><asp:Button ID="ButtonParentGoalSelector" runat="server" Text="Select Goal" onclick="ButtonParentGoalSelector_Click" />
+        </p>
+        <p>
+            Goal Definition
+            <br />    
+            <asp:Button ID="ButtonEditGoalDefinition" runat="server" Text="Create/Edit Fragment" />
+            <br />
+            <asp:TextBox ID="Fragment" runat="server" BackColor="#CCCCCC" Height="118px" ReadOnly="True" Width="294px"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Button ID="ButtonSave" runat="server" Text="Save" onclick="ButtonSave_Click" />
+        </p>
+        <p>
+            <asp:Button ID="ButtonMakeActive" runat="server" Text="Make Active" 
+                Visible="False" onclick="ButtonMakeActive_Click" />
+        </p>
+            <p>
+                <asp:TextBox ID="TextBoxResult" runat="server" Width="300px"></asp:TextBox>
+            </p>
+        </ContentTemplate>
+    </ajax:TabPanel>
+    <ajax:TabPanel ID="TabPanelSelectGoal" runat="server" HeaderText="Select Goal" 
+        Visible="False">
+        <ContentTemplate>
+        <zolilo:GoalSelector ID="GoalSelector1" runat="server" />
+        </ContentTemplate>
+    </ajax:TabPanel>
+    </ajax:tabcontainer>
+    -->

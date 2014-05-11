@@ -1,0 +1,29 @@
+﻿body {
+}
+
+#overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        visibility: hidden;
+ 
+        /*Background information for the preloading mask:*/
+        background-color:#000000;
+ 
+        /*Font color and options:*/
+        color:#CCCCCC;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        font-size:16px;
+    }
+    
+.loading 
+{
+text-align: center;
+position: fixed;
+background: #2FBFA6;
+border-color: #2FBFD6;
+color: black;
+padding: 3px 3px 0;
+top:0px;
+left:35%;
+}

@@ -1,0 +1,137 @@
+﻿Ideas
+
+Investors will own a sort of "stock" in the ideas that get produced.  Derivative works will owe royalties to the investors
+NServiceBus
+
+Implement goals
+
+
+For table cache, have an update all function, where all items are "updated"
+
+
+
+Optimization: http://msdn.microsoft.com/en-us/magazine/cc163854.aspx
+UFrame: http://uframe.codeplex.com/
+JS Exec: http://blackninjasoftware.com/2009/04/07/how-to-invoke-javascript-snippets-without-using-registerclientscriptblock/
+JS Exec trigger: http://www.developerfusion.com/thread/46082/how-do-call-codebehind-function-from-javascript/
+Force Session Load:http://forums.asp.net/p/1098574/4427298.aspx/1?Re+SessionState+in+HttpModule+problem+2+0+
+Fix 405 error: http://siderite.blogspot.com/2009/03/http-error-405-http-verb-post-used-to.html
+High Frequency Timer: http://googlecode.blogspot.com/2009/07/gmail-for-mobile-html5-series-using.html
+ASP.NET control execution lifecycle: http://msdn.microsoft.com/en-us/library/aa719775(vs.71).aspx
+
+
+Outstanding issues:
+
+Problem: http://forums.oreilly.com/topic/3811-no-session-state-in-httpmodule/
+
+Querystring not passing in url command
+
+When window.history.pushstate is enabled, then paths more than one directory deep will cause a redirect to the original url that was entered.  
+Disabling javascript will stop this.
+new uframe gets spawned when this happens
+
+
+
+
+Detect if control is loaded
+
+Ensure that one ZoliloInnerControl is loaded and referenceable
+
+Load scripts within ZoliloInnerControl
+
+Override anchor tags with Ajax
+
+Implement tab container
+
+Test each page's functionality
+
+Clean up code
+
+Modularize Code
+
+
+
+---------
+
+
+
+
+
+
+
+
+
+
+
+*1. Go to goal selector
+*2. On Load:
+*3. Create Select * From Goals query
+*4. Load result set into control
+*5. Display contents in browser
+ 
+(Now you will be able to see a crude list of goals and select a goal from the list to view it)
+ 
+*6. Go to Fragment Editor
+*7. Edit Text (LRA)
+*8. Create Submit Button
+*9. On submit: Load fragment into DB
+ 
+(Now you will be able to add a fragment to the database)
+
+---
+Create abstract data types for:
+
+Goal
+Fragment
+*
+
+---
+
+
+
+
+
+Create command-line style retrieval commands
+
+Add Tabcontrol to main page
+DynamicPopulate on all hyperlinks
+
+Goalview: Add support to display fragments
+
+
+10. Add a simple fragment viewer which will display the assigned fragment within a control on the screen
+
+ 
+11. Add functionality for adding fragment to parent fragment
+12. Add functionality for setting base weight
+ 
+(Now the fragments that are being added can have basic "structure" to them)
+ 
+
+ 
+(Now there will be a way to view a fragment)
+ 
+13. Add default "description" fragment to be attached to each goal
+[Description fragment will consist of a goal with weight of 1 (positive) and a LRA which states "Description of Goal" -- The sub-fragments will be used to actually describe the goal]
+ 
+(Now the goals will have a description)
+ 
+14. Show website to one expert person (Walt) and re-evaluate development priorities
+
+
+
+
+
+
+ALL IDS should start with 1 and increment by 1
+ALL tables need to have these columns
+
+"ID" BIGINT 
+"TIMECREATED" timestamp
+"TIMEMODIFIED" timestamp
+
+
+*Cache*
+
+Must be distributed
+Must be directly writeable

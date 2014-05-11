@@ -1,0 +1,178 @@
+﻿HTTP/1.1 200 OK
+Server: ASP.NET Development Server/10.0.0.0
+Date: Fri, 29 Jul 2011 05:01:27 GMT
+X-AspNet-Version: 4.0.30319
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 11372
+Connection: Close
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title>
+    </head>
+<body>
+<form method="post" action="register?uframe=Body&amp;sid=144825785&amp;redirect=n&amp;supervisor=144825785" onsubmit="javascript:return WebForm_OnSubmit();" id="MainForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTI2NTU0MDU0M2QYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFD2N0bDAwJENoZWNrQm94MTokBDwI5HsuBqP+etr9EpFlNmHkpwTrzuPfbeb6vxBO" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['MainForm'];
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=A1S8IEa5pS0QRFVKL90ix-KZKbwySEElI-RpwIw3ZjDtM8Wt3uR53zxe1qg0osnx4DKHXWkGNe9HhxdH8FPpAJsWw-dJrUlSkF2Nq0Kymbk1&amp;t=634433446595156250" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=isA9T2VweS1_5r1QZClRf9y2BAEVfxGoTLbyU8KEAxMSY8VoFlu7lfQovagWNW-hcxcMYG1Prw-0isWp1y33rD-BG9KmN7B1FhIQ1GTiakc1&amp;t=634433446595156250" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCAKJirWYDgKF/OMUAsG76rMJAras9OUMAu3++usMAuTF8eoNApyTpsgOAvzmsdwFBxtODLFzcJ4yyh/gDoTP5L2aeB39pXcHl1xi7PGdvE4=" />
+</div>
+    
+    Account Registration<br />
+    <br />
+    <span id="MainContent_LabelUserName" style="display:inline-block;height:20px;width:130px;text-align: right">User Name</span>
+    <input name="ctl00$MainContent$TextBoxUserName" type="text" id="MainContent_TextBoxUserName" style="width:242px;margin-left: 30px" />
+        <span id="MainContent_RequiredFieldValidator1" style="display:inline-block;height:20px;display:none;">Field is required.</span>
+    <span id="MainContent_RegularExpressionValidator1" style="display:inline-block;height:20px;display:none;">Username must be between 3-30 alphanumeric characters</span>
+        <br />
+    <span id="MainContent_LabelPassword" style="display:inline-block;height:20px;width:130px;text-align: right">Password</span>
+    <input name="ctl00$MainContent$TextBoxPassword" type="password" maxlength="35" id="MainContent_TextBoxPassword" style="width:242px;margin-left: 30px" />
+        <span id="MainContent_RequiredFieldValidator2" style="display:inline-block;height:20px;display:none;">Field is required.</span>
+    <span id="MainContent_RegularExpressionValidator2" style="display:inline-block;height:20px;visibility:hidden;">Must be 8-30 characters in length.</span>
+        <br />
+    
+    <span id="MainContent_LabelConfirmPassword" style="display:inline-block;height:20px;width:130px;text-align: right">Confirm Password</span>
+    <input name="ctl00$MainContent$TextBoxConfirmPassword" type="password" id="MainContent_TextBoxConfirmPassword" style="width:242px;margin-left: 30px" />
+        <span id="MainContent_RequiredFieldValidator3" style="display:inline-block;height:20px;display:none;">Field is required.</span>
+    <span id="MainContent_CompareValidator1" style="display:inline-block;height:20px;display:none;">Password and confirm password does not match.</span>
+        <br />
+    <span id="MainContent_LabelEmail" style="display:inline-block;height:20px;width:130px;text-align: right">E-Mail Address</span>
+    <input name="ctl00$MainContent$TextBoxEmail" type="text" id="MainContent_TextBoxEmail" style="width:242px;margin-left: 30px" />
+        <span id="MainContent_RequiredFieldValidator4" style="display:inline-block;height:20px;display:none;">Field is required.</span>
+        <span id="MainContent_RegularExpressionValidator3" style="display:inline-block;height:20px;width:186px;display:none;">E-mail address format not valid.</span>
+        <br />
+        <p>&nbsp;<input type="submit" name="ctl00$MainContent$ButtonSubmit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$ButtonSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_ButtonSubmit" style="width:70px;" />
+        <p>
+            Result<br />
+    <input name="ctl00$MainContent$TextBoxResult" type="text" id="MainContent_TextBoxResult" style="height:21px;width:373px;margin-left: 0px" />
+    </p>
+
+    
+    
+    <script type="text/javascript">
+zSupervisor144825785_obj.hookLinks(Body.id);
+hookPostBack();
+</script>
+<span></span>
+    <!--NEEDED for __doPostBack - Todo: Replace with non-hack implementation-->
+    <!--<input id="CheckBox1" type="checkbox" name="ctl00$CheckBox1" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$CheckBox1\&#39;,\&#39;\&#39;)&#39;, 0)" />-->
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("MainContent_RequiredFieldValidator1"), document.getElementById("MainContent_RegularExpressionValidator1"), document.getElementById("MainContent_RequiredFieldValidator2"), document.getElementById("MainContent_RegularExpressionValidator2"), document.getElementById("MainContent_RequiredFieldValidator3"), document.getElementById("MainContent_CompareValidator1"), document.getElementById("MainContent_RequiredFieldValidator4"), document.getElementById("MainContent_RegularExpressionValidator3"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var MainContent_RequiredFieldValidator1 = document.all ? document.all["MainContent_RequiredFieldValidator1"] : document.getElementById("MainContent_RequiredFieldValidator1");
+MainContent_RequiredFieldValidator1.controltovalidate = "MainContent_TextBoxUserName";
+MainContent_RequiredFieldValidator1.errormessage = "Field is required.";
+MainContent_RequiredFieldValidator1.display = "Dynamic";
+MainContent_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator1.initialvalue = "";
+var MainContent_RegularExpressionValidator1 = document.all ? document.all["MainContent_RegularExpressionValidator1"] : document.getElementById("MainContent_RegularExpressionValidator1");
+MainContent_RegularExpressionValidator1.controltovalidate = "MainContent_TextBoxUserName";
+MainContent_RegularExpressionValidator1.errormessage = "Username must be between 3-30 alphanumeric characters";
+MainContent_RegularExpressionValidator1.display = "Dynamic";
+MainContent_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator1.validationexpression = "^[0-9a-zA-Z]{3,30}$";
+var MainContent_RequiredFieldValidator2 = document.all ? document.all["MainContent_RequiredFieldValidator2"] : document.getElementById("MainContent_RequiredFieldValidator2");
+MainContent_RequiredFieldValidator2.controltovalidate = "MainContent_TextBoxPassword";
+MainContent_RequiredFieldValidator2.errormessage = "Field is required.";
+MainContent_RequiredFieldValidator2.display = "Dynamic";
+MainContent_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator2.initialvalue = "";
+var MainContent_RegularExpressionValidator2 = document.all ? document.all["MainContent_RegularExpressionValidator2"] : document.getElementById("MainContent_RegularExpressionValidator2");
+MainContent_RegularExpressionValidator2.controltovalidate = "MainContent_TextBoxPassword";
+MainContent_RegularExpressionValidator2.errormessage = "Must be 8-30 characters in length.";
+MainContent_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator2.validationexpression = "^.{8,30}$";
+var MainContent_RequiredFieldValidator3 = document.all ? document.all["MainContent_RequiredFieldValidator3"] : document.getElementById("MainContent_RequiredFieldValidator3");
+MainContent_RequiredFieldValidator3.controltovalidate = "MainContent_TextBoxConfirmPassword";
+MainContent_RequiredFieldValidator3.errormessage = "Field is required.";
+MainContent_RequiredFieldValidator3.display = "Dynamic";
+MainContent_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator3.initialvalue = "";
+var MainContent_CompareValidator1 = document.all ? document.all["MainContent_CompareValidator1"] : document.getElementById("MainContent_CompareValidator1");
+MainContent_CompareValidator1.controltovalidate = "MainContent_TextBoxConfirmPassword";
+MainContent_CompareValidator1.errormessage = "Password and confirm password does not match.";
+MainContent_CompareValidator1.display = "Dynamic";
+MainContent_CompareValidator1.evaluationfunction = "CompareValidatorEvaluateIsValid";
+MainContent_CompareValidator1.controltocompare = "MainContent_TextBoxPassword";
+MainContent_CompareValidator1.controlhookup = "MainContent_TextBoxPassword";
+var MainContent_RequiredFieldValidator4 = document.all ? document.all["MainContent_RequiredFieldValidator4"] : document.getElementById("MainContent_RequiredFieldValidator4");
+MainContent_RequiredFieldValidator4.controltovalidate = "MainContent_TextBoxEmail";
+MainContent_RequiredFieldValidator4.errormessage = "Field is required.";
+MainContent_RequiredFieldValidator4.display = "Dynamic";
+MainContent_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator4.initialvalue = "";
+var MainContent_RegularExpressionValidator3 = document.all ? document.all["MainContent_RegularExpressionValidator3"] : document.getElementById("MainContent_RegularExpressionValidator3");
+MainContent_RegularExpressionValidator3.controltovalidate = "MainContent_TextBoxEmail";
+MainContent_RegularExpressionValidator3.errormessage = "E-mail address format not valid.";
+MainContent_RegularExpressionValidator3.display = "Dynamic";
+MainContent_RegularExpressionValidator3.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator3.validationexpression = "^(?(\"\")(\"\".+?\"\"@)|(([0-9a-zA-Z]((\\.(?!\\.))|[-!#\\$%&\'\\*\\+/=\\?\\^`\\{\\}\\|~\\w])*)(?<=[0-9a-zA-Z])@))(?(\\[)(\\[(\\d{1,3}\\.){3}\\d{1,3}\\])|(([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,6}))$";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>

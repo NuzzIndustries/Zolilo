@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA7E6F78-10B7-429E-87CC-8F208BE1CE4E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zolilo.Web</RootNamespace>
+    <AssemblyName>Zolilo.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="DB2Connection-Deployment" Order="1" xmlns="">
+          <Destination Path="" />
+          <Object Type="dbFullSql" Enabled="False">
+            <PreSource Path="Server=127.0.0.1:50000%3bDatabase=ZOLILO%3bUID=Mark Nuzzolilo%3bPWD=nanomage604c%3b" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" />
+            <Source Path="obj\Debug\AutoScripts\DB2Connection-Deployment_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50401.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AsyncCtpLibrary">
+      <HintPath>Includes\AsyncCtpLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="BCrypt.Net">
+      <HintPath>Includes\BCrypt\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth, Version=3.4.6.10357, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Includes\DotNetOpenAuth\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\Account\AccountLoginControl_D.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\EditableFragmentControl_D.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentView.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\frageditor.txt" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentViewVerbose.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\Tags\TagViewVerbose.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalDefinitionControl.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalSelector.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalView.ascx" />
+    <Content Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewVertex\VertexView.ascx" />
+    <Content Include="content\images\Logo_GoogleAccounts.PNG" />
+    <Content Include="content\images\Logo_OpenID.PNG" />
+    <Content Include="content\images\Yahoo_ai.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Pages\Account\AccountSettings.aspx" />
+    <Content Include="Pages\Account\IDLink.aspx" />
+    <Content Include="Pages\Account\Login.aspx" />
+    <Content Include="Pages\Account\Login_OpenID.aspx" />
+    <Content Include="Pages\Account\Logout.aspx" />
+    <Content Include="Pages\Account\Register.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Pages\Account\Register.txt" />
+    <Content Include="Pages\Admin\Admin.aspx" />
+    <Content Include="Pages\Agent\NewAgent.aspx" />
+    <Content Include="Pages\Browse\Goals\AddTag.aspx" />
+    <Content Include="Pages\Browse\Tags\DeleteTag.aspx" />
+    <Content Include="Pages\Browse\Tags\NewTag.aspx" />
+    <Content Include="Pages\Browse\Tags\BrowseTags.aspx" />
+    <Content Include="Pages\Browse\Fragments\DeleteFragment.aspx" />
+    <Content Include="Pages\Browse\Fragments\ViewFragment.aspx" />
+    <Content Include="Pages\Browse\Goals\AddGoalVertex.aspx" />
+    <Content Include="Pages\Browse\Goals\DeleteGoal.aspx" />
+    <Content Include="Pages\Browse\Goals\Goals.aspx" />
+    <Content Include="Pages\Browse\Goals\Goals.txt" />
+    <Content Include="Pages\Browse\Goals\NewGoal.aspx" />
+    <Content Include="Pages\Browse\Goals\ViewGoal.aspx" />
+    <Content Include="Pages\Browse\Tags\ViewTag.aspx" />
+    <Content Include="Pages\Browse\Vertex\DeleteVertex.aspx" />
+    <Content Include="Pages\Browse\Vertex\ViewVertex.aspx" />
+    <Content Include="Pages\Errors\404.aspx" />
+    <Content Include="Pages\Errors\GlobalError.aspx" />
+    <Content Include="Pages\Errors\UnhandledError.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\Browse\Browse.aspx" />
+    <Content Include="Pages\Initializing.aspx" />
+    <Content Include="Pages\Metrics\BrowseMetrics.aspx" />
+    <Content Include="Pages\Metrics\NewMetric.aspx" />
+    <Content Include="Pages\Search.aspx" />
+    <Content Include="Pages\SiteInfo.aspx" />
+    <Content Include="Pages\Test\Test1.aspx" />
+    <Content Include="Pages\Test\Test2.aspx" />
+    <Content Include="Pages\Test\Test3.aspx" />
+    <Content Include="Scripts\other\History.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\UFrame-Scripts\innerxhtml.js" />
+    <Content Include="Scripts\UFrame-Scripts\UFrame-new.js" />
+    <Content Include="Scripts\UFrame-Scripts\htmlparser.js" />
+    <Content Include="Scripts\zolilo\zolilo.js" />
+    <Content Include="Scripts\zolilo\zolilo.supervisor.js" />
+    <Content Include="Scripts\zolilo\zolilo.widget.js" />
+    <Content Include="Styles\Site-Pasilda.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Site-old.css" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\zolilo.css" />
+    <Content Include="Tasks.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\ExceptionModule.cs" />
+    <Compile Include="Classes\TheBrain.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Account\AccountLoginControl.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Account\AccountLoginControl_D.ascx.cs">
+      <DependentUpon>AccountLoginControl_D.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Account\AccountLoginControl_D.ascx.designer.cs">
+      <DependentUpon>AccountLoginControl_D.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\EdgeViewMini.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\EditableFragmentControl_D.ascx.cs">
+      <DependentUpon>EditableFragmentControl_D.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\EditableFragmentControl_D.ascx.designer.cs">
+      <DependentUpon>EditableFragmentControl_D.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentReplyControl.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentView.ascx.cs">
+      <DependentUpon>FragmentView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentView.ascx.designer.cs">
+      <DependentUpon>FragmentView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloBasicControls\ZoliloButton.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\EditableFragmentControl.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentControl.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentViewMini.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentViewRepliesControl.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentViewVerbose.ascx.cs">
+      <DependentUpon>FragmentViewVerbose.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\FragmentViewVerbose.ascx.designer.cs">
+      <DependentUpon>FragmentViewVerbose.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Fragment\ReadOnlyFragmentControl.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Node\NodeViewMini.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\SemanticLabels\AgentLabel.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\SemanticLabels\TimeLabel.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Tags\TagViewList.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Tags\TagViewMini.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Tags\TagViewVerbose.ascx.cs">
+      <DependentUpon>TagViewVerbose.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Tags\TagViewVerbose.ascx.designer.cs">
+      <DependentUpon>TagViewVerbose.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalDefinitionControl.ascx.cs">
+      <DependentUpon>GoalDefinitionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalDefinitionControl.ascx.designer.cs">
+      <DependentUpon>GoalDefinitionControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalSelector.ascx.cs">
+      <DependentUpon>GoalSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalSelector.ascx.designer.cs">
+      <DependentUpon>GoalSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\GridView\GridViewTemplate.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalView.ascx.cs">
+      <DependentUpon>GoalView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalView.ascx.designer.cs">
+      <DependentUpon>GoalView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\Test.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalViewChildren.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalViewEdgesBase.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalViewMini.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewGoal\GoalViewParents.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewVertex\VertexView.ascx.cs">
+      <DependentUpon>VertexView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ViewVertex\VertexView.ascx.designer.cs">
+      <DependentUpon>VertexView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ZoliloDataView.cs" />
+    <Compile Include="Classes\Web\WebControls\ZoliloWidgetControls\ZoliloJavascriptWidget.cs" />
+    <Compile Include="Pages\Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\AddTag.aspx.cs">
+      <DependentUpon>AddTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\AddTag.aspx.designer.cs">
+      <DependentUpon>AddTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\DeleteTag.aspx.cs">
+      <DependentUpon>DeleteTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\DeleteTag.aspx.designer.cs">
+      <DependentUpon>DeleteTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\NewTag.aspx.cs">
+      <DependentUpon>NewTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\NewTag.aspx.designer.cs">
+      <DependentUpon>NewTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\BrowseTags.aspx.cs">
+      <DependentUpon>BrowseTags.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\BrowseTags.aspx.designer.cs">
+      <DependentUpon>BrowseTags.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Fragments\DeleteFragment.aspx.cs">
+      <DependentUpon>DeleteFragment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Fragments\DeleteFragment.aspx.designer.cs">
+      <DependentUpon>DeleteFragment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Fragments\ViewFragment.aspx.cs">
+      <DependentUpon>ViewFragment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Fragments\ViewFragment.aspx.designer.cs">
+      <DependentUpon>ViewFragment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\AddGoalVertex.aspx.cs">
+      <DependentUpon>AddGoalVertex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\AddGoalVertex.aspx.designer.cs">
+      <DependentUpon>AddGoalVertex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\DeleteGoal.aspx.cs">
+      <DependentUpon>DeleteGoal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\DeleteGoal.aspx.designer.cs">
+      <DependentUpon>DeleteGoal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\ViewTag.aspx.cs">
+      <DependentUpon>ViewTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Tags\ViewTag.aspx.designer.cs">
+      <DependentUpon>ViewTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Vertex\DeleteVertex.aspx.cs">
+      <DependentUpon>DeleteVertex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Vertex\DeleteVertex.aspx.designer.cs">
+      <DependentUpon>DeleteVertex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Vertex\ViewVertex.aspx.cs">
+      <DependentUpon>ViewVertex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Vertex\ViewVertex.aspx.designer.cs">
+      <DependentUpon>ViewVertex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Errors\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Errors\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Errors\UnhandledError.aspx.cs">
+      <DependentUpon>UnhandledError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Errors\UnhandledError.aspx.designer.cs">
+      <DependentUpon>UnhandledError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Initializing.aspx.cs">
+      <DependentUpon>Initializing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Initializing.aspx.designer.cs">
+      <DependentUpon>Initializing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Metrics\BrowseMetrics.aspx.cs">
+      <DependentUpon>BrowseMetrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Metrics\BrowseMetrics.aspx.designer.cs">
+      <DependentUpon>BrowseMetrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Metrics\NewMetric.aspx.cs">
+      <DependentUpon>NewMetric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Metrics\NewMetric.aspx.designer.cs">
+      <DependentUpon>NewMetric.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Test\Test1.aspx.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Test\Test1.aspx.designer.cs">
+      <DependentUpon>Test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Test\Test2.aspx.cs">
+      <DependentUpon>Test2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Test\Test2.aspx.designer.cs">
+      <DependentUpon>Test2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Test\Test3.aspx.cs">
+      <DependentUpon>Test3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Test\Test3.aspx.designer.cs">
+      <DependentUpon>Test3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZoliloHttpHandler.ashx.cs">
+      <DependentUpon>ZoliloHttpHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\AccountSettings.aspx.cs">
+      <DependentUpon>AccountSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\AccountSettings.aspx.designer.cs">
+      <DependentUpon>AccountSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\IDLink.aspx.cs">
+      <DependentUpon>IDLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\IDLink.aspx.designer.cs">
+      <DependentUpon>IDLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\Login_OpenID.aspx.cs">
+      <DependentUpon>Login_OpenID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\Login_OpenID.aspx.designer.cs">
+      <DependentUpon>Login_OpenID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Agent\NewAgent.aspx.cs">
+      <DependentUpon>NewAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Agent\NewAgent.aspx.designer.cs">
+      <DependentUpon>NewAgent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Browse.aspx.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Browse.aspx.designer.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\Goals.aspx.cs">
+      <DependentUpon>Goals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\Goals.aspx.designer.cs">
+      <DependentUpon>Goals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\NewGoal.aspx.cs">
+      <DependentUpon>NewGoal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\NewGoal.aspx.designer.cs">
+      <DependentUpon>NewGoal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\ViewGoal.aspx.cs">
+      <DependentUpon>ViewGoal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Browse\Goals\ViewGoal.aspx.designer.cs">
+      <DependentUpon>ViewGoal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Errors\GlobalError.aspx.cs">
+      <DependentUpon>GlobalError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Errors\GlobalError.aspx.designer.cs">
+      <DependentUpon>GlobalError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SiteInfo.aspx.cs">
+      <DependentUpon>SiteInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SiteInfo.aspx.designer.cs">
+      <DependentUpon>SiteInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\zolilo\zolilo.comet.main.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Classes\Web\WebControls\ZoliloWidgetControls\Agent\" />
+    <Folder Include="LGPL\WilsonWebForm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\ZoliloHttpHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\Browsers.browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zolilo.Application\Zolilo.Application.csproj">
+      <Project>{5F03F348-E0E4-480B-8053-328AC3B64EAA}</Project>
+      <Name>Zolilo.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zolilo.Data\Zolilo.Data.csproj">
+      <Project>{161C6BC9-FB1A-4069-9813-253F23F3B241}</Project>
+      <Name>Zolilo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zolilo.Core\Zolilo.Core.csproj">
+      <Project>{3C1C7F7D-FA93-4D42-9D71-01D8EE511C55}</Project>
+      <Name>Zolilo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zolilo.Query\Zolilo.Query.csproj">
+      <Project>{8E5565CF-8A24-41DD-908F-8BD72216AA13}</Project>
+      <Name>Zolilo.Query</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15775</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

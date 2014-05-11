@@ -1,0 +1,107 @@
+﻿
+ZOLILO - High level user-centric overview
+
+Roles
+A. User that has information to input
+B. User that wants to read information
+C. User that wants to pay for new information
+
+Any user may want to take on any or all roles at any given point.  These distinctions are made for simplicity.
+
+Role A: User that has information to input
+1. User logs on to the website
+2. User finds content related to tags and subjects which they are good at
+3. User adds appropriate information to the content
+4. User's motivation for doing this, is their reputation rating will be affected, and they may be awarded credits ($)
+
+Role B: User that wants to search for information
+1. User logs on to tbe website
+2. User has several options to find information
+	a. Via statistical algorithm, the user can be suggested things to read that they may be interested in
+	b. User can search for content via keyword
+	c. User can search or browse for content via tags
+3. After searching for any of these items, the user will find the desired node content
+
+Role C: User that wants to pay for new information
+1. User logs on to the website
+2. User searches for a goal that coincides with the type of goal or problem that they want solved
+3. If the goal does not exist, the user creates a goal. 
+4. If the goal exists, the user may be satisfied with the information.
+5. If the user does not find the information they are looking for, they can do two things.
+	a. Make sure the appropriate tags are linked with the goal
+	b. Allocate credits to the goal, to make it more likely for others to solve it (Credits will not be implemented for awhile)
+
+ZOLILO - Mid-level detailed overview
+
+Item A: Graph
+1. Zolilo runs on a graph-based database.
+2. This database is two-tiered. 
+	a. In-memory primary store (Custom/ad-hoc)
+	b. SQL permanent store (PostgreSQL)
+3. All "READ" or "SELECT" operations are done from the in-memory storage, except for the following exception:
+	a. ZoliloSystem.cs initialization causes all data to be selected from the PostgreSQL DB to the in-memory store.
+4. All "UPDATE", "DELETE", and "INSERT" operations cause equal behavior on the in-memory store as it does on the SQL store
+5. The SQL store may not be interacted with directly.  Only a specific set of objects and methods may operate on the SQL store
+6. The graph consists of three types of objects.
+	a. Nodes (Objects that can be connected by edges)
+	b. Edges (Connections between objects.  All edges may function as nodes as well)
+	c. Non Graph Objects (Objects that cannot be connected by edges)
+
+Item B: Node
+1. A node is an object that can be connected to another node via edge.
+2. Nodes are strongly typed, meaning that the system can expect a node of a certain type to be used, and it must match that type.
+3. The following node types are currently being used
+	a. Account
+	b. Agent
+	d. Edge
+	e. Fragment
+	f. Goal
+	g. Metric
+	h. Tag (not implemented)
+
+Node 1: Account
+1. An account is a node that represents a set of login details that a user uses to login to the website.
+
+Node 2: Agent
+1. An agent is an "avatar"-like construct that a user will control, via an account.  
+2. All user-defined changes made to the website are done via an agent.
+
+Node 3: Edge
+1. An edge is a connection between two nodes.
+2. An edge is strongly typed, which guarantees the context of the edge connection to be accurate
+3. The number of types of edges may become large, and do not necessarily have to all be defined here.
+4. An example of an edge is a connection between two goals, A, and B, that states that solving goal A leads to goal B
+
+Node 4: Fragment
+1. A fragment is a small object defined by the agent, which consists of the following:
+	a. A parent object, defining the context of which this fragment is defined.
+	b. Some text, which defines what the agent wants to say
+	c. A variable indicating whether the fragment is a positive, negative, or neutral response to the parent object
+	d. A variable indicating who created the fragment
+	e. A variable indicating the time and date that the fragment was created, and if applicable, last edited
+
+Node 5: Goal
+1. A goal is a node that indicates a unit of progress that is desired to be made.
+2. A goal may broken down into smaller subgoals of measure.
+	a. This is necessary to make it more realistic for larger problems to be solved via Zolilo.
+	b. Solving arbitrarily larger problems will be the main thing that sets Zolilo apart from existing websites.
+3. More details needed here
+
+Node 6: Metric
+1. A score is an arbitrarily defined number, which may be determined from an algorithm of any kind, used in any context
+2. A metric is a thing that determines the following
+	a. How a score will be calculated
+	b. The context in which the score will be used
+3. Zolilo aims to have metrics defined and crowdsourced by the users, but it will be some time before that is a reality
+	a. If the metrics are defined by the users, the potential for quality metrics of data are much higher than any competitor
+	b. If these metrics are better, it will lead to a better product, which is necessary for the success of the business
+
+Node 7: Tag
+1. A tag is a piece of information that defines a subject (i.e. Science, math, etc)
+2. Tags may be broken down into sub categories, and linked similarly to the way goals are linked with other goals
+	a. Goals can be given circular relationships, but tags cannot
+	a. For example, it is generally known that statistics is a subset of mathematics.  Any search for mathematics should imply	that all statistics will be included as well.  This type of search would not be feasible without a graph database
+
+
+Item C: Web Navigation
+1. Web navigation happens inside frames, meaning that only the content that changes is reloaded and refreshed to the user

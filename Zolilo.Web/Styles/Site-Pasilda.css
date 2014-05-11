@@ -1,0 +1,128 @@
+﻿body {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ margin: 0px;
+ padding: 0px;
+ background-color: #2d3851;
+}
+
+h1 {
+ font-family: Times New Roman, serif;
+ font-size: 26px;
+ font-weight: normal;
+ color: #e9f2fc;
+ }
+
+h2 {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ font-weight: bold;
+ color: #333333;
+ }
+
+p {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ line-height: 18px;
+ color: #333333;
+ }
+
+a {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ text-decoration: underline;
+ color: #0000f0;
+ }
+
+a:visited {
+ text-decoration: underline;
+ color: #000090;
+ }
+
+a.navlink {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 11px;
+ font-weight: normal;
+ text-decoration: none;
+ color: #e9f2fc;
+ }
+
+a.navlink:visited {
+ text-decoration: none;
+ color: #e9f2fc;
+ }
+
+a.newslink {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ text-decoration: none;
+ color: #c00050;
+ }
+
+a.newslink:visited {
+ text-decoration: none;
+ color: #900020;
+ }
+
+a.newslink:hover {
+ text-decoration: underline;
+ }
+
+li {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ line-height: 18px;
+ padding-bottom: 7px;
+ color: #333333;
+ }
+
+.navcell {
+ padding: 3px 3px 3px 3px;
+ }
+
+.newsheader {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ padding-left: 5px;
+ color: #e9f2fc;
+ background-color: #ffffff;
+ background-color: #5f7797;
+ }
+
+.newscell {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ padding-top: 7px;
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-bottom: 9px;
+ color: #464c64;
+ background-color: #a7aeb8;
+ }
+
+.update {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 14px;
+ color: #e9f2fc;
+ }
+
+.copyright {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ color: #464c64;
+ }
+.style1 {color: #C1FF64}

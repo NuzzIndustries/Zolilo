@@ -1,0 +1,20 @@
+﻿9/14
+Update initializer page to redirect to last visited page on that window when refreshed
+Add account management
+Add Admin Page
+Encrypt connection string (0.5 days)
+Grey out button after clicking (0.5 days)
+Create an adaptable widget that reads user name and password (1 day)
+Add darknet validator, only for non-development deployment (2 days) 
+Spawn thread when initializing instead of running it on main thread, then check at begin request and redirect to flat page if not initialized
+
+9/15
+LINQ query - Allow case-insensitive search
+Partial implementation of tags
+
+9/16
+Add delete tags
+Add tag description
+
+9/18
+Add tagging system, ability to tag goals (5 days)
